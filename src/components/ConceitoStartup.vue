@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-6">
+      <div class="mt-6" v-if="$pinia.state.value.startup.startups.length !== 0">
         <h2 class="text-sm font-medium text-gray-500">Resultados</h2>
         <ul role="list" class="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           <li v-for="project in $pinia.state.value.startup.startups" :key="project.name" class="col-span-1 flex flex-col rounded-md shadow-sm">
